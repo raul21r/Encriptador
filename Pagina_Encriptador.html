@@ -33,13 +33,14 @@
 			</section>
 		
 			<section class="texto_resultado">
-				<img src="images/munheco.png" alt="Muñeco sin resultado" id="munheco">
 				<div class="tetxo_mensaje">
-					<h2 class="mensaje">Ningún mensaje encontrado</h2>
-					<p class="parrafo">Ingrese el texto que desea encriptar</p>
-					<textarea class="resultado" id="resultado" cols="20" rows="10"></textarea>
-					<button type="button" class="botonCopiar" id="botonCopiar">Copiar</button>
+					<textarea class="resultado" id="resultado" cols="20" rows="10" ></textarea>
+					<h2 class="mensaje" id="mensaje">Ningún mensaje encontrado</h2>
+					<p class="parrafo" id="parrafo">Ingrese el texto que desea encriptar</p>	
+					<img src="images/munheco.png" alt="Muñeco sin resultado" id="munheco">		
+					<button type="button" class="botonCopiar" id="botonCopiar">Copiar</button>		
 				</div>
+				
 			</section>
 		</main>
 		
@@ -50,6 +51,7 @@
 	</body>
 	
 	<script>
+
 		let btn_encriptar = document.querySelector ("#botonEncriptar");
 		btn_encriptar.onclick = encriptar;	
 		
@@ -57,7 +59,9 @@
 		btn_desencriptar.onclick = desencriptar;	
 		
 		let btn_copiar = document.querySelector ("#botonCopiar");
-		btn_copiar.onclick = copiar_texto;	
+		btn_copiar.onclick = copiar_texto;
 	</script>
+
+
 	
 </html

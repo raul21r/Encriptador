@@ -9,9 +9,9 @@
 
 .logo_alura
 {
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 5%;
+    padding-top: 15px;
+    margin-left: 15px;
+    width: 1%;
 }
 
 
@@ -80,12 +80,12 @@ main
   {
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: relative;
     width: 30%;
-    height: 90%;
+    height: 85%;
     left: 60%;
     top: 5%;
-    background: #fff;
+    background: none;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
   }
@@ -99,15 +99,18 @@ main
     padding: 1%;
     gap: 16px;
     position: absolute;
-    width: 100%;
-    top: 65%;
+    width: 95%;
+    height: 95%;
+    
     text-align: center;
+    box-shadow: none;
+    border: none;
 }
 
 .resultado
 {
-
-    display: flex;
+    display:none;
+    visibility: hidden;
     flex-direction: column;
     align-items: top;
     justify-content: center;
@@ -116,15 +119,13 @@ main
     border: none;
     border-radius: 24px;
     color: #0a3871;
-
-    width: 100%;
+    width: 95%;
     height: 80%;
     line-height: 150%;
-    left: 5%;
     top: 5%;
-
-    padding: 3%;
-    position: absolute;
+    padding: 5%;
+    position: relative;
+    box-shadow: none;
  
 } 
 
@@ -134,9 +135,10 @@ main
     outline: none;
 }
 
+
 .tetxo_mensaje h2
 {
-    width: 60%;
+    width: 80%;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
@@ -144,6 +146,7 @@ main
     line-height: 120%;
     text-align: center;
     color: #343a40;
+
 }
 
 .texto_mensaje p
@@ -172,6 +175,9 @@ main
 
 .botonEncriptar
 {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
 height: 67px;
 background: #0A3871;
 border-radius: 24px;
@@ -190,6 +196,7 @@ justify-content: center;
 padding: 2%;
 gap: 8px;
 width: 25%;
+position: relative;
 
 }
 
@@ -208,7 +215,7 @@ width: 25%;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 2%;
     gap: 8px;
@@ -225,7 +232,7 @@ width: 25%;
     line-height: 19px;
     text-align: center;
     margin-left: 30px;
-
+    position: relative;
 }
 
 .botonDesencriptar:hover
@@ -238,9 +245,10 @@ width: 25%;
 	border: 5px solid #0A3871;
 }
 
+
 .texto_resultado img
 {
-    position: absolute;
+    position: relative;
     width: 80%;
     height: 50%;
     top: 15%; 
@@ -248,16 +256,15 @@ width: 25%;
 
 .botonCopiar
 {
-
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 2%;
-    gap: 8px;
-    width: 25%;
-    height: 67px;
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 2%;
+gap: 8px;
+width: 35%;
+height: 67px;
 background: #D8DFE8;
 border-radius: 24px;
 color: #0A3871;
@@ -270,24 +277,24 @@ font-size: 18px;
 line-height: 19px;
 text-align: center;
 
-margin-left: 108px;
-margin-top: 402px;
-position: absolute;
+margin-left: 5%;
+margin-top: 25%;
+position: relative;
 
 }
 
-/*.informacion
+.informacion
 {
     color: #495057;
     font-size: 14px;
-}*/
+}
 
 
 footer
 {
 	text-align: center;
-	
-	padding: 40px;
+	margin:  auto;
+	padding: 10px;
 }
 
 
@@ -305,7 +312,7 @@ footer
    
     .textoEncriptar
     {
-        width: 80%;
+        width: 40%;
         height: 60%;
         left: 10%;
         top: 5%
@@ -332,15 +339,15 @@ footer
 
     .botonEncriptar, .botonDesencriptar
     {
-        width: 48%;
+        width: 45%;
         border-radius: 16px;
     }
 
 	.texto_resultado
 	{
 		width: 80%;
-        height: 15%;
-        left: 10%;
+        height: 35%;
+        left: 5%;
         top: 80%;
 	}
 
@@ -356,6 +363,22 @@ footer
         display: none;
         visibility: hidden;
     }
+
+    .logo_alura
+    {
+        width: 2%; 
+        align-items: center;
+        top: 10%;
+    }
+
+    footer
+{
+    display: block;
+	text-align: center;
+	margin:  auto;
+	padding: 10px;
+    top: 100%;
+}
 
 }
 

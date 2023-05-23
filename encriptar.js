@@ -1,19 +1,28 @@
+
+
 function encriptar()
 {
+	var imagen = document.getElementById("munheco");
+   	imagen.style.display = 'none';
+	var mensaje = document.getElementById("mensaje");
+   	mensaje.style.display = 'none';
+	var parrafo = document.getElementById("parrafo");
+   	parrafo.style.display = 'none';
+
+	var caja_texto= document.getElementById("resultado");
+	caja_texto.style.display = 'flex';
+	caja_texto.style.visibility = 'visible';
+	
 	let texto_encriptar = document.getElementById("textoEncriptar").value.toLowerCase();
 	
-	
-
 	let textoEncriptado =texto_encriptar.replace(/e/img, "enter");
-	textoEncriptado =textoEncriptado.replace(/i/img, "imes");
-	textoEncriptado =textoEncriptado.replace(/o/img, "ober");
-	textoEncriptado =textoEncriptado.replace(/u/img, "ufat");
-	textoEncriptado =textoEncriptado.replace(/a/img, "ai");
+	textoEncriptado = textoEncriptado.replace(/i/img, "imes");
+	textoEncriptado = textoEncriptado.replace(/o/img, "ober");
+	textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
+	textoEncriptado = textoEncriptado.replace(/a/img, "ai");
 	
-	resultado.value ="";
-	resultado.style.backgroundImage = "none";
-
 	document.getElementById("resultado").innerHTML = textoEncriptado;
+	
 
 }
 
